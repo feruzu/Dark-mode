@@ -1,0 +1,114 @@
+:root {
+    --fuente:'Oswald', sans-serif;
+    --color-primario: #000000;
+    --color-claro: #f2f2f2; 
+    --rosado: #ef798a;
+    --violeta: #964ec2;
+    
+}
+
+body {
+    background-color: var(--color-claro);
+    color: var(--color-primario);
+    font-family: var(--fuente);
+    font-size: 1.2rem;
+    height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+}
+
+button {
+    background-color: var(--color-claro);
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid #ef798a;
+    background-color: var(--rosado);
+    font-family: var(--fuente);
+    color: var(--color-claro);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+p {
+    font-size: 2rem;
+}
+
+section {
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Botón deslizante */
+
+.switch {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tema-switch {
+    display: block;
+    height: 34px;
+    position: relative;
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.tema-switch input {
+    display: none;
+}
+
+.control {
+    background-color: var(--rosado);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transition: .4s all; 
+    border-radius: 2rem;
+}
+
+.control:before {
+    background-color: var(--color-claro);
+    bottom: 4px;
+    content: '';
+    height:26px ;
+    left: 4px;
+    position: absolute;
+    transition: .4s all;
+    width: 25px;
+    border-radius: 2rem;
+}
+
+input:checked + .control {
+    background-color: var(--violeta); 
+}
+
+input:checked + .control:before {
+    transform: translateX(36px);
+}
+
+
