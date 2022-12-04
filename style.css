@@ -1,14 +1,18 @@
 :root {
     --fuente:'Oswald', sans-serif;
-    --color-primario: #000000;
+    --color-primario: #17181D;
+    --color-fondo:#f2f2f2;
     --color-claro: #f2f2f2; 
-    --rosado: #ef798a;
-    --violeta: #964ec2;
-    
+    --rosado: #ee95a2;
 }
+    [tema="dark"] {
+        --color-primario: #f2f2f2;
+        --color-fondo:#17181D;
+    }
+
 
 body {
-    background-color: var(--color-claro);
+    background-color: var(--color-fondo);
     color: var(--color-primario);
     font-family: var(--fuente);
     font-size: 1.2rem;
@@ -32,7 +36,7 @@ button {
     font-size: 1.2rem;
     border-radius: 0.2rem;
     padding: 0.3rem 1.5rem;
-    border: 1px solid #ef798a;
+    border: 1px solid var(--rosado);
     background-color: var(--rosado);
     font-family: var(--fuente);
     color: var(--color-claro);
@@ -104,7 +108,7 @@ section {
 }
 
 input:checked + .control {
-    background-color: var(--violeta); 
+    background-color: var(--rosado); 
 }
 
 input:checked + .control:before {
