@@ -10,7 +10,6 @@
         --color-fondo:#17181D;
     }
 
-
 body {
     background-color: var(--color-fondo);
     color: var(--color-primario);
@@ -31,10 +30,9 @@ h1 {
 }
 
 button {
-    background-color: var(--color-claro);
     cursor: pointer;
     font-size: 1.2rem;
-    border-radius: 0.2rem;
+    border-radius: 2rem;
     padding: 0.3rem 1.5rem;
     border: 1px solid var(--rosado);
     background-color: var(--rosado);
@@ -45,6 +43,10 @@ button {
 
 button:active {
     transform: scale(0.8);
+}
+
+.bx.bxs-heart {
+    display: none;
 }
 
 p {
@@ -113,6 +115,6 @@ input:checked + .control {
 
 input:checked + .control:before {
     transform: translateX(36px);
+    
 }
-
 
