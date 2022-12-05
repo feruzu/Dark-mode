@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     text-transform: uppercase;
     margin: 0;
 }
@@ -118,3 +118,15 @@ input:checked + .control:before {
     
 }
 
+
+/*  Responsive  */ 
+
+@media (max-width: 768px) { 
+     h1 {
+        font-size: 3.5rem;
+     }
+
+     p {
+        font-size: 1.5rem;
+     }
+}
